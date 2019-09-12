@@ -1,18 +1,29 @@
-header {   
+header {
+
     .topbar {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 1000px;
-        padding: 2% 100px;
-        margin: 0 auto;
+        max-width: 1000px;
+        padding: 0 100px;
+        margin: 5px auto;
         border-bottom: 2px dashed @navigation-border;
+        @media @mobile {
+            display: flex;    
+            flex-direction: column;
+        }
     }
-    
+
     nav{
         display: flex;
         justify-content: space-evenly;
         width: 50%;
+        @media @mobile {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
         a{
             color: black;
             text-decoration: none;
