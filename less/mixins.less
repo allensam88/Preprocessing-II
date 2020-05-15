@@ -1,1 +1,23 @@
-// Mixins in here
+.btnMix (@bg-color, @border-radius, @font-size) {
+    background-color: @bg-color;
+    border-radius: @border-radius;
+    font-size: @font-size;
+    color: white;
+    text-align: center;
+    padding: 5%;
+}
+
+.mobileMixSection () {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1% 0;
+  }
+
+  .mobileMixContent () {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1% 0;
+  }
